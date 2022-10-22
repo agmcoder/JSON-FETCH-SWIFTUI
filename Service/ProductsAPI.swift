@@ -7,11 +7,9 @@
 
 import Foundation
 import Combine
+
 protocol ProductsAPIProtocol:AnyObject{
-    //var networked: NetworkerProtocol{get}
-    //func loadProducts()->AnyPublisher<Products,Never>
     func loadProducts(endPoint:String) async throws->Root?
-    
 }
 
 final class ProductsAPI:ProductsAPIProtocol{
